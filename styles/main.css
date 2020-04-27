@@ -1,0 +1,75 @@
+* {
+    box-sizing: content-box;
+}
+.calculator {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    /*margin: 100px 700px;*/
+    border: 2px solid yellow;
+}
+.screen {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    font-size: 35px;
+    height: 100px;
+}
+.calc-buttons button {
+    font-size: 25px;
+}
+.row {
+    display: flex;
+}
+.first button {
+    background-color: grey;
+    color: blue;
+}
+.first button:hover,  .second button:last-child:hover,.third button:last-child:hover{
+    cursor: pointer;
+    background-color: wheat;
+}
+.first button:active,  .second button:last-child:active,.third button:last-child:active {
+    background-color: #6e704b;
+}
+.second button:last-child, .third button:last-child {
+    background-color: grey;
+    color: blue;
+}
+.row button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    flex-grow: 1;
+    border: 1px solid whitesmoke;
+}
+#tall {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    border-bottom-color: blue;
+    background-color: blue;
+}
+#tall2{
+    border-top-color: blue;
+    background-color: blue;
+}
+#tall:hover,#tall2:hover{
+    cursor: pointer;
+}
+#num {
+    background-color: black;
+    color: white;
+}
+#num:hover{
+    cursor: pointer;
+    background-color: cadetblue;
+}
+#num:active {
+    background-color: rgba(34, 30, 30, 0.719);
+}
